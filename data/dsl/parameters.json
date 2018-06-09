@@ -1,0 +1,111 @@
+{
+    "parameters": {
+        "defaults": {
+            "from": "now-15m",
+            "to": "now",
+            "interval": "1m",
+            "size": 5
+        },
+        "timeframes": [
+            {
+                "from": "now-15m",
+                "to": "now",
+                "interval": "1m",
+                "size": 5,
+                "order": 1
+            },
+            {
+                "from": "now-1h",
+                "to": "now",
+                "interval": "5m",
+                "size": 5,
+                "order": 2
+            },
+            {
+                "from": "now-3h",
+                "to": "now",
+                "interval": "15m",
+                "size": 5,
+                "order": 3
+            },
+            {
+                "from": "now-6h",
+                "to": "now",
+                "interval": "30m",
+                "size": 5,
+                "order": 3.5
+            },
+            {
+                "from": "now-15h",
+                "to": "now",
+                "interval": "1h",
+                "size": 5,
+                "order": 4
+            },
+            {
+                "from": "now-60h",
+                "to": "now",
+                "interval": "4h",
+                "size": 5,
+                "order": 5
+            },
+            {
+                "from": "now-90h",
+                "to": "now",
+                "interval": "6h",
+                "size": 5,
+                "order": 6
+            },
+            {
+                "from": "now-180h",
+                "to": "now",
+                "interval": "12h",
+                "size": 5,
+                "order": 7
+            },
+            {
+                "from": "now-360h",
+                "to": "now",
+                "interval": "24h",
+                "size": 5,
+                "order": 8
+            },
+            {
+                "from": "now-2520h",
+                "to": "now",
+                "interval": "168h",
+                "size": 5,
+                "order": 9
+            }
+        ]
+    },
+    "hyperparameters":{
+        "max_timeframe": "now-6h",
+        "trade_intensity": "30m",
+        "confidence_threshold": [-60, 60],
+        "accumulation_pair": "USD",
+        "trade_type": "bearish",
+        "timeframe_influence": true,
+        "wyckoff_phase": {
+            "distribution": true,
+            "ranging": false,
+            "accumulation": false,
+            "breakup": false,
+            "breakdown": false
+        }
+    },
+    "alert":{
+        "isAlert": true,
+        "config_property": "mailgun",
+        "email": "mail@ankitgyawali.com",
+        "confidence_threshold": [-80, 80]
+    },
+    "position": {
+        "available_trade_sizes": [ 0.01, 0.05, 0.1, 0.2, 0.3, 0.5, 0.75, 1, 2, 5, 10 ],
+        "execute_single_size_only": -1,
+        "fees": {
+            "taker_fee": 0.003,
+            "error_margin": 0.005
+        }
+    }
+}

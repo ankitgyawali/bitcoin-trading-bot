@@ -1,0 +1,17 @@
+{
+    "environment": "dev",
+    "env": {
+        "dev": {
+            "elasticsearch": "localhost:9200",
+            "reset_num": "15",
+            "insert_on_ticker": true,
+            "chunk_by_ticker": false
+        },
+        "prod": {
+            "elasticsearch": "localhost:9200",
+            "reset_num": "15",
+            "insert_on_ticker": true,
+            "chunk_by_ticker": false
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "bitcoin-trading-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "elasticsearch": "^14.2.2",
+    "gdax": "^0.8.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1",
+    "moment-timezone": "^0.5.17",
+    "newline-remove": "^1.0.2",
+    "sendmail": "^1.4.1",
+    "tulind": "^0.8.10",
+    "uuid": "^3.2.1",
+    "ws": "^5.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "ingest": "pm2 start bitfinex.js --name=\"bitfinex-ingest\"",
+    "takeposition": "pm2 start positions.js --cron \"*/30 * * * *\" --name=\"btc_position\"",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitgyawali/bitcoin-trading-bot.git"
+  },
+  "author": "Ankit Gyawali <dev@ankitgyawali.com> (https://ankitgyawali.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitgyawali/bitcoin-trading-bot.git/issues"
+  },
+  "homepage": "https://github.com/ankitgyawali/bitcoin-trading-bot.git#readme"
+}
