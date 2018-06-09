@@ -1,0 +1,24 @@
+Document sample ticker data:
+
+    {
+        "_index": "btc-bfx-ticker-2018-05-05",
+        "_type": "ticker",
+        "_id": "1525493547801",
+        "_score": 1,
+        "_source": {
+          "bid": 9852.8,
+          "bid_size": 37.41770127,
+          "ask": 9852.9,
+          "ask_size": 97.00976236,
+          "daily_change": 211.2,
+          "daily_change_perc": 0.0219,
+          "last_price": 9852.8,
+          "volume": 24564.74492855,
+          "high": 9889,
+          "low": 9585,
+          "timestamp": "2018-05-05T04:12:27.801Z",
+          "type": "positive",
+          "avg": 9852.849999999999
+        }
+      }
+      

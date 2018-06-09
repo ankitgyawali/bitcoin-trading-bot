@@ -1,0 +1,15 @@
+Document sample trade data:
+
+  {
+    "_index": "btc-bfx-trade-2018-05-05",
+    "_type": "trade",
+    "_id": "1525492739168",
+    "_score": 1,
+    "_source": {
+      "timestamp": "2018-05-05T03:58:57.168Z",
+      "type": "buy",
+      "amount": 69.70306415999998,
+      "price": 9832.421735746926,
+      "frequency": 75
+    }
+  }

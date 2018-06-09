@@ -1,0 +1,93 @@
+Document Sample from position data:
+
+{
+  "_index": "btc-bfx-positions-2018-06-09",
+  "_type": "position",
+  "_id": "e2415df1-6c23-11e8-b8b1-539e1f13e5ab",
+  "_score": 1.7227666,
+  "_source": {
+    "bot_signal": {
+      "buy_strength": 117.16666666666667,
+      "sell_strength": 116.16666666666663,
+      "local_timeframe_buy_wins": -9
+    },
+    "sentiment_momentum": {
+      "buy_strength": 79.33333333333334,
+      "sell_strength": 80.83333333333331,
+      "buy_strength_momentum": -6,
+      "sell_strength_momentum": -5
+    },
+    "price_volume_analysis": {
+      "isLocalVolBuyWin": 8,
+      "isLocalFrequencyBuyWin": -8,
+      "volume_difference": -1.9040742352393998
+    },
+    "indicators": {
+      "adsoc_indicator": 1.65545293491357,
+      "RSI": {
+        "average": 50.322831964084706,
+        "isStrongOverBoughtSignal": 1.3333333333333333,
+        "isStrongOverSoldSignal": 0.5
+      }
+    },
+    "final_call": "bearish",
+    "confidence": -20.75,
+    "position_sizes": [
+      0.01,
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.75,
+      1,
+      2,
+      5,
+      10
+    ],
+    "trades": {
+      "trade_size": 0.1,
+      "trade_time": "2018-06-09T20:30:01.037Z",
+      "average_entry_price": 7619.99,
+      "entry_price": 761.999,
+      "average_exit_price": 0,
+      "exit_price": 0,
+      "realized_pnl": 0,
+      "realized_pnl_raw": 0,
+      "fees_percent": 0.008,
+      "open_metadata": "valid",
+      "entry_fee": 6.095992000000001
+    },
+    "opened_at": "2018-06-09T20:30:01.037Z",
+    "metadata": {
+      "timeframes": [
+        {
+          "from": "now-15m",
+          "to": "now",
+          "interval": "1m",
+          "size": 5,
+          "order": 1
+        },
+        {
+          "from": "now-1h",
+          "to": "now",
+          "interval": "5m",
+          "size": 5,
+          "order": 2
+        },
+        {
+          "from": "now-3h",
+          "to": "now",
+          "interval": "15m",
+          "size": 5,
+          "order": 3
+        }
+      ],
+      "timeframe_length": 3,
+      "trade_environment": "imp",
+      "trade_category": "demo"
+    },
+    "@timestamp": "2018-06-09T20:30:01.037Z",
+    "state": "open"
+  }
+}
