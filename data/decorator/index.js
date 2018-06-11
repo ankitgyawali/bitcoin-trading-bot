@@ -115,7 +115,7 @@ let FINAL_PROCESSOR = function(final_reference, hyperparameters) {
 
         }
     }
-    // console.log(hyperparameters.trade_intensity.match(/\d/g).join(""))
+    final_reference.confidence_absolute = Math.abs(final_reference.confidence)
     return final_reference
 }
 
