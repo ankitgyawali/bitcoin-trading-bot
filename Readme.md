@@ -2,7 +2,7 @@
 
 Automated bitcoin trading bot.
 
-Blog Link: 
+Blog Link: https://blog.ankitgyawali.com/blog/2018/06/10/Bitcoin-Trading-Bot/
 
 ## Installation Instructions
 
