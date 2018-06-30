@@ -1,4 +1,4 @@
-## Bitcoin trading Bitcoin
+## Bitcoin trading bot
 
 Automated bitcoin trading bot.
 
